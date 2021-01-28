@@ -30,7 +30,7 @@ var ConfigService = /** @class */ (function () {
             username: this.getValue('MYSQL_USER'),
             password: this.getValue('MYSQL_PASSWORD'),
             database: this.getValue('MYSQL_DATABASE'),
-            entities: ['dist/**/*-entity{.ts,.js}'],
+            entities: ['**/*-entity{.ts,.js}'],
             migrationsTableName: 'migration',
             migrations: ['src/migration/*{.ts,.js}'],
             cli: {

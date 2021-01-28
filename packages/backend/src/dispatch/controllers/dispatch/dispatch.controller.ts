@@ -54,6 +54,6 @@ export class DispatchController {
   @Delete(':uuid')
   @UsePipes(new ValidationPipe({ whitelist: true }))
   async deleteDispatchOperation(@Param() uuid: string) {
-    return await this.dispatchAggregateService.delete(uuid).toPromise();
+    return await this.dispatchAggregateService.doSoftDelete(uuid).toPromise();
   }
 }

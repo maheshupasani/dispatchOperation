@@ -6,7 +6,7 @@
   "password": "",
   "database": "dispatchoperation",
   "entities": [
-    "dist/**/*-entity{.ts,.js}"
+    "**/*-entity{.ts,.js}"
   ],
   "migrationsTableName": "migration",
   "migrations": [

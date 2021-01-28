@@ -48,7 +48,7 @@ export class DispatchService {
     return await this.dispatchRepository.findOne(query);
   }
 
-  async delete(uuid: string) {
-    return await this.dispatchRepository.delete(uuid);
+  async doSoftDelete(uuid: string) {
+    return await this.dispatchRepository.softDelete(uuid);
   }
 }

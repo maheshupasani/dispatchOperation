@@ -63,7 +63,7 @@ export class DispatchAggregateService {
     );
   }
 
-  delete(uuid: string) {
-    return from(this.dispatchService.delete(uuid));
+  doSoftDelete(uuid: string) {
+    return from(this.dispatchService.doSoftDelete(uuid));
   }
 }

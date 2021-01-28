@@ -42,6 +42,10 @@ var Dispatch = /** @class */ (function (_super) {
         __metadata("design:type", Date)
     ], Dispatch.prototype, "modifiedOn", void 0);
     __decorate([
+        typeorm_1.DeleteDateColumn(),
+        __metadata("design:type", Date)
+    ], Dispatch.prototype, "deletedOn", void 0);
+    __decorate([
         typeorm_1.Column(),
         __metadata("design:type", String)
     ], Dispatch.prototype, "createdBy", void 0);

@@ -5,6 +5,7 @@ import {
   BaseEntity,
   CreateDateColumn,
   UpdateDateColumn,
+  DeleteDateColumn,
 } from 'typeorm';
 
 @Entity()
@@ -17,6 +18,9 @@ export class Dispatch extends BaseEntity {
 
   @UpdateDateColumn()
   modifiedOn: Date;
+
+  @DeleteDateColumn()
+  deletedOn: Date;
 
   @Column()
   createdBy: string;
