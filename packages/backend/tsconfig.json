@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es5",
+    "rootDir": "./",
+    "outDir": "./tsc",
+    "noImplicitAny": false,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "declaration": false,
+    "listFiles": false,
+    "lib": [
+      "es6",
+      "dom",
+      "es2015.promise",
+      "esnext.asynciterable"
+    ],
+    "noUnusedLocals": true,
+  },
+  "exclude": [
+    ".vscode",
+    ".serverless",
+    ".git",
+    "node_modules"
+  ],
+  "compileOnSave": true,
+  "buildOnSave": false
+}
